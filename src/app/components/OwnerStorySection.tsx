@@ -47,7 +47,7 @@ export function OwnerStorySection() {
                 className="relative rounded-2xl overflow-hidden border-4 border-[#d4af37]/30"
               >
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1623594675959-02360202d4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc2Nzg1Nzk5Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="./images/cicely.jpg"
                   alt="Cicely Denean Cobb - Wedding Officiant"
                   className="w-full aspect-[4/5] object-cover"
                 />
