@@ -1,0 +1,19 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Smooth scrolling and base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure images load smoothly */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
