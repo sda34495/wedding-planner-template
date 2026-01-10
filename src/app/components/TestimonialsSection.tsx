@@ -44,15 +44,15 @@ export function TestimonialsSection() {
         >
           {/* Headline */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#d4af37]/20 to-[#f7d76e]/20 rounded-full border border-[#d4af37]/30 mb-6">
-              <Star className="w-4 h-4 text-[#d4af37]" />
-              <span className="font-['Inter'] text-[#d4af37] text-sm uppercase tracking-wider">Real Love Stories</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff1493]/20 to-[#7dd3cc]/20 rounded-full border border-[#ff1493]/30 mb-6">
+              <Star className="w-4 h-4 text-[#ff1493]" />
+              <span className="font-['Inter'] text-[#ff1493] text-sm uppercase tracking-wider">Real Stories</span>
             </div>
 
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
               Voices of
               <br />
-              <span className="text-[#d4af37]">Happy Couples</span>
+              <span className="text-[#ff1493]">Happy Couples</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Don't just take our word for it—hear from couples who trusted us with their special moments.
@@ -68,15 +68,15 @@ export function TestimonialsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#d4af37]/20 rounded-2xl p-8 hover:border-[#d4af37]/40 transition-all"
+                className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#ff1493]/20 rounded-2xl p-8 hover:border-[#ff1493]/40 transition-all"
               >
                 {/* Quote Icon */}
-                <Quote className="w-10 h-10 text-[#d4af37]/30 mb-4" />
+                <Quote className="w-10 h-10 text-[#ff1493]/30 mb-4" />
 
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#d4af37] text-[#d4af37]" />
+                    <Star key={i} className="w-5 h-5 fill-[#ff1493] text-[#ff1493]" />
                   ))}
                 </div>
 
@@ -86,8 +86,8 @@ export function TestimonialsSection() {
                 </p>
 
                 {/* Client Info */}
-                <div className="flex items-center gap-4 pt-6 border-t border-[#d4af37]/10">
-                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#d4af37]/30">
+                <div className="flex items-center gap-4 pt-6 border-t border-[#ff1493]/10">
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#ff1493]/30">
                     <ImageWithFallback
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -98,7 +98,7 @@ export function TestimonialsSection() {
                     <p className="font-['Playfair_Display'] text-lg text-[#f7e7ce]">
                       {testimonial.name}
                     </p>
-                    <p className="font-['Inter'] text-sm text-[#d4af37]">
+                    <p className="font-['Inter'] text-sm text-[#ff1493]">
                       {testimonial.date}
                     </p>
                   </div>
@@ -114,10 +114,10 @@ export function TestimonialsSection() {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-            <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#d4af37]/20 rounded-full">
+                <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#ff1493]/20 rounded-full">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-[#d4af37] text-[#d4af37]" />
+                  <Star key={i} className="w-6 h-6 fill-[#ff1493] text-[#ff1493]" />
                 ))}
               </div>
               <span className="font-['Inter'] text-[#f7e7ce] text-lg">

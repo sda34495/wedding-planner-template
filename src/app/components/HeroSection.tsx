@@ -25,11 +25,11 @@ export function HeroSection() {
           />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/85 via-[#0a0a0a]/70 to-[#0a0a0a]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.08)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,105,180,0.08)_0%,transparent_70%)]" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
+      <div id="hero" className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,49 +37,49 @@ export function HeroSection() {
         >
           {/* Main Headline */}
           <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl lg:text-8xl text-[#f7e7ce] mb-8 leading-tight">
-            When love cannot wait,
+            Make every celebration unforgettable.
             <br />
-            <span className="text-[#d4af37]">neither should your marriage.</span>
+            <span className="text-[#ff1493]">Events, parties & bespoke decor.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="font-['Inter'] text-xl md:text-2xl text-[#faf8f3] mb-12 max-w-3xl mx-auto leading-relaxed">
-            Personal, professional, and unforgettable ceremonies — from same-day signings to once-in-a-lifetime moments.
+            Professional event planning and decor for birthdays, corporate events, private parties, and more.
           </p>
 
           {/* Trust Signals */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12 text-[#d4af37]">
-            <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#d4af37]/20">
-              <div className="w-2 h-2 bg-[#d4af37] rounded-full" />
-              <span className="font-['Inter']">Licensed Officiant</span>
+            <div className="flex flex-wrap justify-center gap-6 mb-12 text-[#ff1493]">
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
+                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+                <span className="font-['Inter']">Professional Event Planner</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
+                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+                <span className="font-['Inter']">Same-Day & On-Demand Services</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
+                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+                <span className="font-['Inter']">Serving Concord, NC & Beyond</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#d4af37]/20">
-              <div className="w-2 h-2 bg-[#d4af37] rounded-full" />
-              <span className="font-['Inter']">Same-Day Services Available</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#d4af37]/20">
-              <div className="w-2 h-2 bg-[#d4af37] rounded-full" />
-              <span className="font-['Inter']">Serving Today & 2026–2027 Dates</span>
-            </div>
-          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a
-              href="tel:602-570-6728"
+              href="tel:+19802483144"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#d4af37] to-[#f7d76e] text-[#0a0a0a] px-10 py-5 rounded-full transition-all shadow-lg shadow-[#d4af37]/30 hover:shadow-xl hover:shadow-[#d4af37]/50"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff1493] to-[#7dd3cc] text-[#0a0a0a] px-10 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
             >
               <Calendar className="w-6 h-6" />
               <span className="font-['Inter'] font-semibold text-lg">Book Same-Day Service</span>
             </motion.a>
             
             <motion.a
-              href="tel:602-570-6728"
+              href="tel:+19802483144"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#d4af37] px-10 py-5 rounded-full border-2 border-[#d4af37] transition-all hover:bg-[#d4af37]/10"
+              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#ff1493] px-10 py-5 rounded-full border-2 border-[#ff1493] transition-all hover:bg-[#ff1493]/10"
             >
               <Phone className="w-6 h-6" />
               <span className="font-['Inter'] font-semibold text-lg">Call Now</span>
@@ -94,13 +94,13 @@ export function HeroSection() {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2 }}
-            className="w-6 h-10 border-2 border-[#d4af37]/50 rounded-full flex items-start justify-center p-2"
-          >
-            <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
-          </motion.div>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+              className="w-6 h-10 border-2 border-[#ff1493]/50 rounded-full flex items-start justify-center p-2"
+            >
+              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
+            </motion.div>
         </motion.div>
       </div>
     </section>

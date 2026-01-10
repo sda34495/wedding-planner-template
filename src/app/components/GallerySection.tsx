@@ -74,7 +74,7 @@ export function GallerySection() {
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
               Moments That
               <br />
-              <span className="text-[#d4af37]">Last Forever</span>
+              <span className="text-[#ff1493]">Last Forever</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Every ceremony tells a unique story. Browse through our collection of beautiful moments and celebrations we've had the honor of being part of.
@@ -100,7 +100,7 @@ export function GallerySection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 border-2 border-[#d4af37] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 border-2 border-[#ff1493] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             ))}
           </div>
@@ -117,7 +117,7 @@ export function GallerySection() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-6 right-6 text-[#d4af37] hover:text-[#f7d76e] transition-colors"
+            className="absolute top-6 right-6 text-[#ff1493] hover:text-[#7dd3cc] transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X className="w-10 h-10" />
@@ -143,7 +143,7 @@ export function GallerySection() {
                 e.stopPropagation();
                 setSelectedImage((prev) => (prev! > 0 ? prev! - 1 : galleryImages.length - 1));
               }}
-              className="px-6 py-3 bg-[#d4af37] text-[#0a0a0a] rounded-full hover:bg-[#f7d76e] transition-colors"
+              className="px-6 py-3 bg-[#ff1493] text-[#0a0a0a] rounded-full hover:bg-[#7dd3cc] transition-colors"
             >
               Previous
             </button>
@@ -152,7 +152,7 @@ export function GallerySection() {
                 e.stopPropagation();
                 setSelectedImage((prev) => (prev! < galleryImages.length - 1 ? prev! + 1 : 0));
               }}
-              className="px-6 py-3 bg-[#d4af37] text-[#0a0a0a] rounded-full hover:bg-[#f7d76e] transition-colors"
+              className="px-6 py-3 bg-[#ff1493] text-[#0a0a0a] rounded-full hover:bg-[#7dd3cc] transition-colors"
             >
               Next
             </button>

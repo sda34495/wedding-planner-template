@@ -20,7 +20,7 @@ export function NewYearSection() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-1 h-1 bg-[#d4af37] rounded-full"
+            className="absolute w-1 h-1 bg-[#ff1493] rounded-full"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -47,16 +47,16 @@ export function NewYearSection() {
           className="text-center"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#d4af37]/20 to-[#f7d76e]/20 rounded-full border border-[#d4af37]/30 mb-6">
-            <Sparkles className="w-4 h-4 text-[#d4af37]" />
-            <span className="font-['Inter'] text-[#d4af37] text-sm uppercase tracking-wider">New Year's Special</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff1493]/20 to-[#7dd3cc]/20 rounded-full border border-[#ff1493]/30 mb-6">
+            <Sparkles className="w-4 h-4 text-[#ff1493]" />
+            <span className="font-['Inter'] text-[#ff1493] text-sm uppercase tracking-wider">New Year's Special</span>
           </div>
 
           {/* Headline */}
           <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-8 leading-tight">
             Start Your New Year
             <br />
-            <span className="text-[#d4af37]">With a New Beginning</span>
+            <span className="text-[#ff1493]">With a New Beginning</span>
           </h2>
 
           {/* Emotional Copy */}
@@ -71,8 +71,8 @@ export function NewYearSection() {
 
           {/* Date Highlights */}
           <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#d4af37]/20 rounded-2xl p-8 text-left hover:border-[#d4af37]/40 transition-all">
-              <Calendar className="w-10 h-10 text-[#d4af37] mb-4" />
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#ff1493]/20 rounded-2xl p-8 text-left hover:border-[#ff1493]/40 transition-all">
+              <Calendar className="w-10 h-10 text-[#ff1493] mb-4" />
               <h3 className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-3">
                 New Year's Eve
               </h3>
@@ -81,8 +81,8 @@ export function NewYearSection() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#d4af37]/20 rounded-2xl p-8 text-left hover:border-[#d4af37]/40 transition-all">
-              <Calendar className="w-10 h-10 text-[#d4af37] mb-4" />
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#ff1493]/20 rounded-2xl p-8 text-left hover:border-[#ff1493]/40 transition-all">
+              <Calendar className="w-10 h-10 text-[#ff1493] mb-4" />
               <h3 className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-3">
                 New Year's Day
               </h3>
@@ -94,10 +94,10 @@ export function NewYearSection() {
 
           {/* CTA */}
           <motion.a
-            href="tel:602-570-6728"
+            href="tel:+19802483144"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#d4af37] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#d4af37]/30 hover:shadow-xl hover:shadow-[#d4af37]/50"
+            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff1493] to-[#7dd3cc] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
           >
             <span className="font-['Inter'] font-semibold text-lg">Reserve Your New Year Ceremony</span>
           </motion.a>

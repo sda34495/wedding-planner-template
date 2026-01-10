@@ -8,7 +8,7 @@ export function LimitedOfferSection() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]" />
       <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: 'radial-gradient(circle at 2px 2px, #d4af37 1px, transparent 0)',
+        backgroundImage: 'radial-gradient(circle at 2px 2px, #ff1493 1px, transparent 0)',
         backgroundSize: '40px 40px'
       }} />
       
@@ -37,9 +37,9 @@ export function LimitedOfferSection() {
           className="text-center"
         >
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#d4af37]/20 to-[#f7d76e]/20 rounded-full border border-[#d4af37]/30 mb-6">
-            <Sparkles className="w-4 h-4 text-[#d4af37]" />
-            <span className="font-['Inter'] text-[#d4af37] text-sm uppercase tracking-wider">Limited Time Offer</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff1493]/20 to-[#7dd3cc]/20 rounded-full border border-[#ff1493]/30 mb-6">
+            <Sparkles className="w-4 h-4 text-[#ff1493]" />
+            <span className="font-['Inter'] text-[#ff1493] text-sm uppercase tracking-wider">Limited Time Offer</span>
           </div>
 
           {/* Headline */}
@@ -53,10 +53,10 @@ export function LimitedOfferSection() {
           </p>
 
           {/* Urgency Visual */}
-          <div className="bg-gradient-to-r from-[#1a1a1a] via-[#141414] to-[#1a1a1a] border border-[#d4af37]/20 rounded-2xl p-8 mb-10 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-r from-[#1a1a1a] via-[#141414] to-[#1a1a1a] border border-[#ff1493]/20 rounded-2xl p-8 mb-10 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Clock className="w-8 h-8 text-[#d4af37]" />
-              <span className="font-['Playfair_Display'] text-3xl text-[#d4af37]">Offer Ends Soon</span>
+              <Clock className="w-8 h-8 text-[#ff1493]" />
+              <span className="font-['Playfair_Display'] text-3xl text-[#ff1493]">Offer Ends Soon</span>
             </div>
             <p className="font-['Inter'] text-[#f7e7ce]">
               Don't let this opportunity slip away. Secure your special rate before time runs out.
@@ -65,10 +65,10 @@ export function LimitedOfferSection() {
 
           {/* CTA */}
           <motion.a
-            href="tel:602-570-6728"
+            href="tel:+19802483144"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#d4af37] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#d4af37]/30 hover:shadow-xl hover:shadow-[#d4af37]/50"
+            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff69b4] to-[#ff1493] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff69b4]/30 hover:shadow-xl hover:shadow-[#ff69b4]/50"
           >
             <span className="font-['Inter'] font-semibold text-lg">Secure Your Rate Before It's Gone</span>
           </motion.a>
