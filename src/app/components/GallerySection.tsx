@@ -5,15 +5,15 @@ import { X } from "lucide-react";
 
 const galleryImages = [
   {
-    url: "https://images.unsplash.com/photo-1765615196684-61b3b9b298c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwb2ZmaWNpYW50JTIwY2VyZW1vbnl8ZW58MXx8fHwxNzY3OTEyMzg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://scontent.fkhi2-3.fna.fbcdn.net/v/t51.82787-15/590411457_18227282524309986_9171539462628551314_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHpdXS3CnqDQES23Z2ojckG01HY2V9u1z_TUdjZX27XP14UlP7Hevv6zCjNpl7gQyREQt3LiJObbh8KIgLxdiGr&_nc_ohc=7T5fP_YplHsQ7kNvwGGVCcy&_nc_oc=Adnqwfy-6NW0YhxmfS7ogOs-g59CH5nL3_Q6hQTuHS0dCCkyju3s9CaKSffSbUgIsXI&_nc_zt=23&_nc_ht=scontent.fkhi2-3.fna&_nc_gid=VAli6K3DhVedUemGamIRug&oh=00_AfrKcs8UGhS-0VKwcVE7WerzuyYuq9hu2750GZ4zRk-q2Q&oe=69682F68",
     alt: "Wedding officiant ceremony"
   },
   {
-    url: "https://images.unsplash.com/photo-1604378282113-1fde3be480ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmlkZSUyMGdyb29tJTIwdm93c3xlbnwxfHx8fDE3Njc5ODEyODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://scontent.fkhi2-2.fna.fbcdn.net/v/t51.82787-15/588639977_18227282455309986_7870057146595857533_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEJwnSwHzvwbI81y10mwcbhxMDLbmf_jSzEwMtuZ_-NLO5gI1qVRpU43H6f2GT8NrIiPjMJ7qy003yN9nmSxou-&_nc_ohc=B2tVtTwS6BsQ7kNvwF7b_Yh&_nc_oc=AdlSD80yI9iE-AUa7wsa8wELpxBCMhmwizje1Hwc00goV3b7ADpLbqupYmcGlxk7mi4&_nc_zt=23&_nc_ht=scontent.fkhi2-2.fna&_nc_gid=TBCcsYPMo8hVtZrh0D0giw&oh=00_AfoWmqhC1Zjjjy14eF0FQP-Qsa-1xyhHTFQNHrIsEGgRTA&oe=69681BA5",
     alt: "Bride and groom exchanging vows"
   },
   {
-    url: "https://images.unsplash.com/photo-1688790026521-b7b14a885116?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcmluZ3MlMjBleGNoYW5nZXxlbnwxfHx8fDE3Njc5ODEyODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    url: "https://scontent.fkhi2-3.fna.fbcdn.net/v/t51.82787-15/590411402_18227282464309986_5181614060181392075_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcoo7IWevz0zPVJfgBXoLlfmXNDEC_vjB-Zc0MQL--MF46TZjB4KnCp3Kb2Wj41cC6FQpClRlQmiixaPnyoExF&_nc_ohc=RF42tP-FLFwQ7kNvwEkw62B&_nc_oc=AdkXYoegVhT9_fKKK9P0Sd-euIB0pxRo6Lpe_GEIZ121U2t8iWdZSY1tSpdO_EKmZJk&_nc_zt=23&_nc_ht=scontent.fkhi2-3.fna&_nc_gid=N0lJmzqe4JCk-bvz7tqo4A&oh=00_AfrlBaA9vKEtRZYWmYpj9BXAkALzy3VPUZM8xJGVCHCCBA&oe=69683D1D",
     alt: "Wedding rings exchange"
   },
   {
@@ -74,7 +74,7 @@ export function GallerySection() {
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
               Moments That
               <br />
-              <span className="text-[#d4af37]">Last Forever</span>
+              <span className="text-[#ff1493]">Last Forever</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Every ceremony tells a unique story. Browse through our collection of beautiful moments and celebrations we've had the honor of being part of.
@@ -100,7 +100,7 @@ export function GallerySection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 border-2 border-[#d4af37] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 border-2 border-[#ff1493] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             ))}
           </div>
@@ -117,7 +117,7 @@ export function GallerySection() {
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-6 right-6 text-[#d4af37] hover:text-[#f7d76e] transition-colors"
+            className="absolute top-6 right-6 text-[#ff1493] hover:text-[#7dd3cc] transition-colors"
             onClick={() => setSelectedImage(null)}
           >
             <X className="w-10 h-10" />
@@ -143,7 +143,7 @@ export function GallerySection() {
                 e.stopPropagation();
                 setSelectedImage((prev) => (prev! > 0 ? prev! - 1 : galleryImages.length - 1));
               }}
-              className="px-6 py-3 bg-[#d4af37] text-[#0a0a0a] rounded-full hover:bg-[#f7d76e] transition-colors"
+              className="px-6 py-3 bg-[#ff1493] text-[#0a0a0a] rounded-full hover:bg-[#7dd3cc] transition-colors"
             >
               Previous
             </button>
@@ -152,7 +152,7 @@ export function GallerySection() {
                 e.stopPropagation();
                 setSelectedImage((prev) => (prev! < galleryImages.length - 1 ? prev! + 1 : 0));
               }}
-              className="px-6 py-3 bg-[#d4af37] text-[#0a0a0a] rounded-full hover:bg-[#f7d76e] transition-colors"
+              className="px-6 py-3 bg-[#ff1493] text-[#0a0a0a] rounded-full hover:bg-[#7dd3cc] transition-colors"
             >
               Next
             </button>

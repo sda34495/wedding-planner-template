@@ -33,10 +33,10 @@ export function BookingSection() {
           className="text-center"
         >
           {/* Headline */}
-          <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl text-[#f7e7ce] mb-6 leading-tight">
+            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl text-[#f7e7ce] mb-6 leading-tight">
             Book Your
             <br />
-            <span className="text-[#d4af37]">Perfect Moment</span>
+            <span className="bg-gradient-to-r from-[#ff99cc] to-[#ff1493] bg-clip-text text-transparent">Perfect Moment</span>
           </h2>
 
           <p className="font-['Inter'] text-xl text-[#a8a8a8] mb-16 max-w-2xl mx-auto leading-relaxed">
@@ -50,14 +50,14 @@ export function BookingSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-[#d4af37]/10 to-[#1a1a1a] border-2 border-[#d4af37] rounded-2xl p-10 text-left relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#d4af37]/5 rounded-full blur-3xl" />
+              className="bg-gradient-to-br from-[#ff1493]/10 to-[#1a1a1a] border-2 border-[#ff1493] rounded-2xl p-10 text-left relative overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff1493]/5 rounded-full blur-3xl" />
               <div className="relative z-10">
-                <div className="bg-[#d4af37] w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                  <div className="bg-[#ff1493] w-14 h-14 rounded-full flex items-center justify-center mb-6">
                   <Calendar className="w-7 h-7 text-[#0a0a0a]" />
                 </div>
-                <h3 className="font-['Playfair_Display'] text-3xl text-[#d4af37] mb-4">
+                  <h3 className="font-['Playfair_Display'] text-3xl text-[#ff1493] mb-4">
                   Available Today
                 </h3>
                 <p className="font-['Inter'] text-[#f5f5f5] mb-6 leading-relaxed">
@@ -66,7 +66,7 @@ export function BookingSection() {
                 <ul className="space-y-3">
                   {["Immediate availability", "Flexible hours", "Quick & seamless process"].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-[#d4af37]" />
+                      <Check className="w-5 h-5 text-[#ff1493]" />
                       <span className="font-['Inter'] text-[#f7e7ce]">{item}</span>
                     </li>
                   ))}
@@ -79,12 +79,12 @@ export function BookingSection() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#d4af37]/30 rounded-2xl p-10 text-left relative overflow-hidden hover:border-[#d4af37]/50 transition-all"
+              className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#ff1493]/30 rounded-2xl p-10 text-left relative overflow-hidden hover:border-[#ff1493]/50 transition-all"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#d4af37]/5 rounded-full blur-3xl" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff1493]/5 rounded-full blur-3xl" />
               <div className="relative z-10">
-                <div className="bg-[#d4af37]/20 w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                  <Calendar className="w-7 h-7 text-[#d4af37]" />
+                  <div className="bg-[#ff1493]/20 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                    <Calendar className="w-7 h-7 text-[#ff1493]" />
                 </div>
                 <h3 className="font-['Playfair_Display'] text-3xl text-[#f7e7ce] mb-4">
                   2026–2027 Bookings
@@ -95,7 +95,7 @@ export function BookingSection() {
                 <ul className="space-y-3">
                   {["Reserve your date", "Personalized planning", "Premium ceremony options"].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-[#d4af37]" />
+                      <Check className="w-5 h-5 text-[#ff1493]" />
                       <span className="font-['Inter'] text-[#f7e7ce]">{item}</span>
                     </li>
                   ))}
@@ -106,10 +106,10 @@ export function BookingSection() {
 
           {/* CTA */}
           <motion.a
-            href="tel:602-570-6728"
+            href="tel:+19802483144"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#d4af37] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#d4af37]/30 hover:shadow-xl hover:shadow-[#d4af37]/50"
+            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff1493] to-[#7dd3cc] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
           >
             <Calendar className="w-6 h-6" />
             <span className="font-['Inter'] font-semibold text-lg">Reserve Your Date Now</span>

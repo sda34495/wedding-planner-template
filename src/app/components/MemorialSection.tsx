@@ -24,9 +24,9 @@ export function MemorialSection() {
         >
           {/* Divider Line */}
           <div className="flex items-center justify-center mb-12">
-            <div className="h-px w-24 bg-gradient-to-r from-transparent to-[#d4af37]/50" />
-            <div className="mx-4 w-2 h-2 bg-[#d4af37]/50 rounded-full" />
-            <div className="h-px w-24 bg-gradient-to-l from-transparent to-[#d4af37]/50" />
+            <div className="h-px w-24 bg-gradient-to-r from-transparent to-[#ff1493]/50" />
+            <div className="mx-4 w-2 h-2 bg-[#ff1493]/50 rounded-full" />
+            <div className="h-px w-24 bg-gradient-to-l from-transparent to-[#ff1493]/50" />
           </div>
 
           {/* Headline */}
@@ -34,7 +34,7 @@ export function MemorialSection() {
             <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl text-[#f7e7ce] mb-6 leading-tight">
               Compassionate
               <br />
-              <span className="text-[#d4af37]">Funeral & Memorial Services</span>
+              <span className="text-[#ff1493]">Events, Celebrations & Memorials</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Honoring lives lived with dignity, respect, and heartfelt compassion.
@@ -66,10 +66,10 @@ export function MemorialSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
-                className="bg-gradient-to-b from-[#1a1a1a] to-[#141414] border border-[#d4af37]/10 rounded-2xl p-8 hover:border-[#d4af37]/30 transition-all"
+                className="bg-gradient-to-b from-[#1a1a1a] to-[#141414] border border-[#ff1493]/10 rounded-2xl p-8 hover:border-[#ff1493]/30 transition-all"
               >
-                <div className="bg-[#d4af37]/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-[#d4af37]" />
+                <div className="bg-[#ff1493]/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <service.icon className="w-8 h-8 text-[#ff1493]" />
                 </div>
                 <h3 className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-4">
                   {service.title}
@@ -82,24 +82,24 @@ export function MemorialSection() {
           </div>
 
           {/* Supportive Statement */}
-          <div className="bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#d4af37]/10 rounded-2xl p-10 mb-12 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#ff1493]/10 rounded-2xl p-10 mb-12 max-w-4xl mx-auto">
             <p className="font-['Inter'] text-lg text-[#faf8f3] text-center leading-relaxed italic mb-6">
               "In times of loss, words can be hard to find. Let us help you create a meaningful tribute that brings comfort and celebrates a life that mattered."
             </p>
             <div className="flex items-center justify-center gap-2">
-              <div className="h-px w-12 bg-[#d4af37]/30" />
-              <Heart className="w-4 h-4 text-[#d4af37]" />
-              <div className="h-px w-12 bg-[#d4af37]/30" />
+              <div className="h-px w-12 bg-[#ff1493]/30" />
+              <Heart className="w-4 h-4 text-[#ff1493]" />
+              <div className="h-px w-12 bg-[#ff1493]/30" />
             </div>
           </div>
 
           {/* CTA */}
           <div className="text-center">
             <motion.a
-              href="mailto:hitched2youhappened@gmail.com"
+              href="mailto:deluxe.decor.12.0@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a] text-[#d4af37] px-12 py-5 rounded-full border-2 border-[#d4af37]/50 transition-all hover:bg-[#d4af37]/10 hover:border-[#d4af37]"
+              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a] text-[#ff1493] px-12 py-5 rounded-full border-2 border-[#ff1493]/50 transition-all hover:bg-[#ff1493]/10 hover:border-[#ff1493]"
             >
               <span className="font-['Inter'] font-semibold text-lg">Speak With Us Confidentially</span>
             </motion.a>

@@ -1,3 +1,4 @@
+import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { LimitedOfferSection } from "./components/LimitedOfferSection";
 import { NewYearSection } from "./components/NewYearSection";
@@ -15,6 +16,9 @@ import { VideoShowcaseSection } from "./components/VideoShowcaseSection";
 export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] overflow-x-hidden">
+      {/* Header */}
+      <Header />
+
       {/* Sticky CTA Button */}
       <StickyCtaButton />
 
@@ -35,25 +39,25 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="relative py-12 px-6 border-t border-[#d4af37]/10">
+  <footer className="relative py-12 px-6 border-t border-[#ff69b4]/10">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="font-['Playfair_Display'] text-2xl text-[#d4af37] mb-4">
-            Hitch Happens
+          <p className="font-['Playfair_Display'] text-2xl text-[#ff69b4] mb-4">
+            DeluxeDecor12
           </p>
           <p className="font-['Inter'] text-[#a8a8a8] mb-6">
-            Licensed Wedding & Memorial Officiant • Serving Arizona with Love & Compassion
+            Event Planning & Decor Services • Serving Arizona with Love & Compassion
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-[#a8a8a8]">
-            <a href="tel:602-570-6728" className="hover:text-[#d4af37] transition-colors">
-              602-570-6728
-            </a>
-            <span className="hidden sm:inline">•</span>
-            <a href="mailto:hitched2youhappened@gmail.com" className="hover:text-[#d4af37] transition-colors">
-              hitched2youhappened@gmail.com
-            </a>
-          </div>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-[#a8a8a8]">
+              <a href="tel:+19802483144" className="hover:text-[#ff69b4] transition-colors">
+                +1 980-248-3144
+              </a>
+              <span className="hidden sm:inline">•</span>
+              <a href="mailto:deluxe.decor.12.0@gmail.com" className="hover:text-[#ff69b4] transition-colors">
+                deluxe.decor.12.0@gmail.com
+              </a>
+            </div>
           <p className="font-['Inter'] text-xs text-[#a8a8a8] mt-8">
-            © 2026 Hitch Happens. All rights reserved.
+            © 2026 DeluxeDecor12. All rights reserved.
           </p>
         </div>
       </footer>
