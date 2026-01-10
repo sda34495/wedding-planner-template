@@ -57,7 +57,7 @@ export default function App() {
               </a>
             </div>
           <p className="font-['Inter'] text-xs text-[#a8a8a8] mt-8">
-            © 2026 Hitch Happens. All rights reserved.
+            © 2026 DeluxeDecor12. All rights reserved.
           </p>
         </div>
       </footer>

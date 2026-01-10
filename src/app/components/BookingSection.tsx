@@ -36,7 +36,7 @@ export function BookingSection() {
             <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl text-[#f7e7ce] mb-6 leading-tight">
             Book Your
             <br />
-            <span className="bg-gradient-to-r from-[#ff69b4] to-[#ff1493] bg-clip-text text-transparent">Perfect Moment</span>
+            <span className="bg-gradient-to-r from-[#ff99cc] to-[#ff1493] bg-clip-text text-transparent">Perfect Moment</span>
           </h2>
 
           <p className="font-['Inter'] text-xl text-[#a8a8a8] mb-16 max-w-2xl mx-auto leading-relaxed">

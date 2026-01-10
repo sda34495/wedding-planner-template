@@ -96,7 +96,7 @@ export function MemorialSection() {
           {/* CTA */}
           <div className="text-center">
             <motion.a
-              href="mailto:hitched2youhappened@gmail.com"
+              href="mailto:deluxe.decor.12.0@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a] text-[#ff1493] px-12 py-5 rounded-full border-2 border-[#ff1493]/50 transition-all hover:bg-[#ff1493]/10 hover:border-[#ff1493]"

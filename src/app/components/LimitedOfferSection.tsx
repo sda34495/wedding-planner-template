@@ -68,7 +68,7 @@ export function LimitedOfferSection() {
             href="tel:+19802483144"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff69b4] to-[#ff1493] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff69b4]/30 hover:shadow-xl hover:shadow-[#ff69b4]/50"
+            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff99cc] to-[#ff1493] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff99cc]/30 hover:shadow-xl hover:shadow-[#ff99cc]/50"
           >
             <span className="font-['Inter'] font-semibold text-lg">Secure Your Rate Before It's Gone</span>
           </motion.a>

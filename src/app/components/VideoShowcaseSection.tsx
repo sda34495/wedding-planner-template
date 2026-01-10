@@ -38,9 +38,9 @@ export function VideoShowcaseSection() {
         >
           {/* Headline */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff69b4]/20 to-[#ff1493]/20 rounded-full border border-[#ff69b4]/30 mb-6">
-              <Heart className="w-4 h-4 text-[#ff69b4]" />
-              <span className="font-['Inter'] text-[#ff69b4] text-sm uppercase tracking-wider">Event Highlights</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff99cc]/20 to-[#ff1493]/20 rounded-full border border-[#ff99cc]/30 mb-6">
+              <Heart className="w-4 h-4 text-[#ff99cc]" />
+              <span className="font-['Inter'] text-[#ff99cc] text-sm uppercase tracking-wider">Event Highlights</span>
             </div>
 
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
@@ -60,7 +60,7 @@ export function VideoShowcaseSection() {
             viewport={{ once: true }}
             className="mb-12 max-w-5xl mx-auto"
           >
-              <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-[#ff69b4]/30 group">
+              <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-[#ff99cc]/30 group">
               {!isPlaying ? (
                 <>
                   <ImageWithFallback
@@ -72,7 +72,7 @@ export function VideoShowcaseSection() {
                   
                   <button
                     onClick={() => setIsPlaying(true)}
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-r from-[#ff69b4] to-[#ff1493] rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-2xl shadow-[#ff69b4]/50 group-hover:shadow-[#ff1493]/70"
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-r from-[#ff99cc] to-[#ff1493] rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-2xl shadow-[#ff99cc]/50 group-hover:shadow-[#ff1493]/70"
                   >
                     <Play className="w-10 h-10 text-[#0a0a0a] ml-1" fill="#0a0a0a" />
                   </button>
@@ -111,7 +111,7 @@ export function VideoShowcaseSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="relative aspect-video rounded-xl overflow-hidden border border-[#ff69b4]/20 hover:border-[#ff69b4]/50 transition-all cursor-pointer group"
+                className="relative aspect-video rounded-xl overflow-hidden border border-[#ff99cc]/20 hover:border-[#ff99cc]/50 transition-all cursor-pointer group"
               >
                 <ImageWithFallback
                   src={video.thumbnail}
@@ -120,7 +120,7 @@ export function VideoShowcaseSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/50 to-transparent" />
                 
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#ff69b4]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#ff99cc]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
                   <Play className="w-6 h-6 text-[#0a0a0a] ml-0.5" fill="#0a0a0a" />
                 </div>
 

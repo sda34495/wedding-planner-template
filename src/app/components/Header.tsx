@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { useState } from "react";
 
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,9 +28,14 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-3"
           >
-            <div className="w-10 h-10 bg-gradient-to-r from-[#ff69b4] to-[#ff1493] rounded-full flex items-center justify-center">
-              <span className="font-['Playfair_Display'] text-white font-bold text-lg">D</span>
-            </div>
+           <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-r from-[#ff99cc] to-[#ff1493]">
+  <img
+    src="https://scontent.fkhi2-2.fna.fbcdn.net/v/t39.30808-6/448539302_908950934578252_3979253405119487051_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFWxSsCv25Y2RtPuwYZidKTEyBLFzwVbRYTIEsXPBVtFpqOXMV1MLn9TD6SnDzx7uRiQUZAul-tr5weg4VpWBCQ&_nc_ohc=VJurqMP8YaAQ7kNvwEG22dW&_nc_oc=AdkfF02brXAcXZek-BNQUb-8Nbl5gVIEU3nQxFOhD6X_igVZaq3DcCiObW7ZXLP3YLg&_nc_zt=23&_nc_ht=scontent.fkhi2-2.fna&_nc_gid=sylNxrdtW8kROZqLeQb56A&oh=00_Afp6OGSlNoJ7mAm0lhW-BgrEadQb18dzrEVaXedoNkqLTw&oe=69684111" // yahan apni image ka path ya URL daalo
+    alt="Avatar"
+    className="w-full h-full object-cover"
+  />
+</div>
+
             <div>
               <h1 className="font-['Playfair_Display'] text-xl text-[#ff1493]">DeluxeDecor12</h1>
               <p className="text-xs text-[#a8a8a8]">Event Planning & Decor</p>

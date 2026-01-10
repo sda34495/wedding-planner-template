@@ -53,7 +53,7 @@ export function ContactSection() {
 
             {/* Email */}
             <motion.a
-              href="mailto:hitched2youhappened@gmail.com"
+              href="mailto:deluxe.decor.12.0@gmail.com"
               whileHover={{ scale: 1.02 }}
               className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#ff1493]/30 rounded-2xl p-10 text-center hover:border-[#ff1493] transition-all group"
             >
@@ -64,7 +64,7 @@ export function ContactSection() {
                 Email Us
               </h3>
               <p className="font-['Inter'] text-lg text-[#ff1493] mb-4 break-all">
-                hitched2youhappened@gmail.com
+                deluxe.decor.12.0@gmail.com
               </p>
               <p className="font-['Inter'] text-[#a8a8a8]">
                 For detailed inquiries and confidential consultations
@@ -120,7 +120,7 @@ export function ContactSection() {
             </motion.a>
             
             <motion.a
-              href="mailto:hitched2youhappened@gmail.com"
+              href="mailto:deluxe.decor.12.0@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#ff1493] px-12 py-5 rounded-full border-2 border-[#ff1493] transition-all hover:bg-[#ff1493]/10"
