@@ -29,7 +29,7 @@ export function SameDaySection() {
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
               Same-Day
               <br />
-              <span className="text-[#ff1493]">"Sign and Go" Services</span>
+              <span className="text-[#f7e7ce]">"Sign and Go" Services</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Sometimes, the most important moment is right now. We understand that love doesn't wait for paperwork—and neither should you.
@@ -40,20 +40,20 @@ export function SameDaySection() {
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Pain Points */}
             <div className="space-y-6">
-              <h3 className="font-['Playfair_Display'] text-3xl text-[#ff1493] mb-8">
+              <h3 className="font-['Playfair_Display'] text-3xl text-[#f7e7ce] mb-8">
                 Common Challenges:
               </h3>
               
               {/* Small image gallery above pain points */}
               <div className="grid grid-cols-2 gap-3 mb-6">
-                <div className="aspect-video rounded-lg overflow-hidden border border-[#ff1493]/20">
+                <div className="aspect-video rounded-lg overflow-hidden border border-[#f7e7ce]/20">
                   <ImageWithFallback
                     src="https://scontent.fkhi2-3.fna.fbcdn.net/v/t51.82787-15/546567125_18215835214309986_8985588986689589147_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFvS95XmzgfDNDR-aSNebMCSiY5hcWsQ3NKJjmFxaxDc-nYZZ8HnFJ5-udGKWTH5mVorjFwvZeYrEIzx_vyTSks&_nc_ohc=PKtNICckViQQ7kNvwGHIyVZ&_nc_oc=AdmA749rJDIqB4STKBLd_V7Eb_jfIYgAyEAnrXQR1p7o2fHXtaN0VHBORvwdFk6-dp0&_nc_zt=23&_nc_ht=scontent.fkhi2-3.fna&_nc_gid=352jp4sansaZ7lEzTMqUjA&oh=00_AfoDDE7m12Rew01lafaHytmMjVlxUZw3B12MInjBPSOwwQ&oe=69681E61"
                     alt="Romantic outdoor wedding"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="aspect-video rounded-lg overflow-hidden border border-[#ff1493]/20">
+                <div className="aspect-video rounded-lg overflow-hidden border border-[#f7e7ce]/20">
                   <ImageWithFallback
                     src="https://scontent.fkhi2-3.fna.fbcdn.net/v/t51.82787-15/546507139_18215835223309986_1272827318883163216_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJtD3Rh5xoH3GX3N8QUNEAKQF4JHFY2d4pAXgkcVjZ3mHb-G2u30xjXH59PpecJysKk73W4Q7W18fl94FHZh5s&_nc_ohc=qB-zQXXZkJoQ7kNvwEZU2vl&_nc_oc=AdkK8t689C38el_97IYi1YUcj6G5wG6iIs-bMye52Lwrz9ahHlQasF8PDZqqeaIGsnk&_nc_zt=23&_nc_ht=scontent.fkhi2-3.fna&_nc_gid=tmnz6pojZaJ49-A4474mfQ&oh=00_Afo-bdG3alCyZNvwVbUcENGnEqr_kqtT56blm2U_kz5xjQ&oe=696832C8"
                     alt="Intimate elopement"
@@ -75,9 +75,9 @@ export function SameDaySection() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="flex items-start gap-4 bg-[#1a1a1a]/50 p-5 rounded-xl border border-[#ff1493]/10"
+      className="flex items-start gap-4 bg-[#1a1a1a]/50 p-5 rounded-xl border border-[#f7e7ce]/10"
     >
-      <item.icon className="w-6 h-6 text-[#ff1493] flex-shrink-0 mt-1" />
+      <item.icon className="w-6 h-6 text-[#f7e7ce] flex-shrink-0 mt-1" />
       <p className="font-['Inter'] text-[#f5f5f5]">{item.text}</p>
     </motion.div>
   ))}
@@ -86,13 +86,13 @@ export function SameDaySection() {
             </div>
 
             {/* Solution */}
-           <div className="bg-gradient-to-br from-[#1a1a1a] via-[#141414] to-[#1a1a1a] border border-[#ff1493]/30 rounded-2xl p-10">
+           <div className="bg-gradient-to-br from-[#1a1a1a] via-[#141414] to-[#1a1a1a] border border-[#f7e7ce]/30 rounded-2xl p-10">
   <h3 className="font-['Playfair_Display'] text-3xl text-[#f7e7ce] mb-6">
     Our Solution:
   </h3>
 
   <p className="font-['Inter'] text-lg text-[#a8a8a8] mb-8 leading-relaxed">
-    Deluxedecor12 is your trusted partner in premium event planning and management. 
+    Deluxe Decor is your trusted partner in premium event planning and management. 
     We transform ideas into unforgettable experiences by handling every detail with 
     creativity, precision, and elegance.
   </p>
@@ -114,15 +114,15 @@ export function SameDaySection() {
         transition={{ delay: index * 0.1 }}
         className="flex items-center gap-3"
       >
-        <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+        <div className="w-2 h-2 bg-[#f7e7ce] rounded-full" />
         <span className="font-['Inter'] text-[#f7e7ce]">{item}</span>
       </motion.li>
     ))}
   </ul>
 
-  <div className="pt-6 border-t border-[#ff1493]/20">
+  <div className="pt-6 border-t border-[#f7e7ce]/20">
     <p className="font-['Inter'] text-[#faf8f3] italic text-center leading-relaxed">
-      "Every event deserves perfection. Let Deluxedecor12 bring your vision to life while you enjoy the moment."
+      "Every event deserves perfection. Let Deluxe Decor bring your vision to life while you enjoy the moment."
     </p>
   </div>
 </div>
@@ -135,7 +135,7 @@ export function SameDaySection() {
               href="tel:+19802483144"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff99cc] to-[#ff1493] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff99cc]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#f7e7ce]/30 hover:shadow-xl hover:shadow-[#f7d76e]/50"
             >
               <span className="font-['Inter'] font-semibold text-lg">Get Married Today</span>
             </motion.a>

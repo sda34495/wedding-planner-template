@@ -38,15 +38,15 @@ export function VideoShowcaseSection() {
         >
           {/* Headline */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#ff99cc]/20 to-[#ff1493]/20 rounded-full border border-[#ff99cc]/30 mb-6">
-              <Heart className="w-4 h-4 text-[#ff99cc]" />
-              <span className="font-['Inter'] text-[#ff99cc] text-sm uppercase tracking-wider">Event Highlights</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#f7e7ce]/20 to-[#f7d76e]/20 rounded-full border border-[#f7e7ce]/30 mb-6">
+              <Heart className="w-4 h-4 text-[#fff1b2]" />
+              <span className="font-['Inter'] text-[#fff1b2] text-sm uppercase tracking-wider">Event Highlights</span>
             </div>
 
             <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
               See the Magic
               <br />
-              <span className="text-[#ff1493]">Come to Life</span>
+              <span className="text-[#f7e7ce]">Come to Life</span>
             </h2>
             <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
               Experience the emotion, elegance, and unforgettable moments from ceremonies we've had the honor to perform.
@@ -60,7 +60,7 @@ export function VideoShowcaseSection() {
             viewport={{ once: true }}
             className="mb-12 max-w-5xl mx-auto"
           >
-              <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-[#ff99cc]/30 group">
+              <div className="relative aspect-video rounded-2xl overflow-hidden border-2 border-[#f7e7ce]/30 group">
               {!isPlaying ? (
                 <>
                   <ImageWithFallback
@@ -72,7 +72,7 @@ export function VideoShowcaseSection() {
                   
                   <button
                     onClick={() => setIsPlaying(true)}
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-r from-[#ff99cc] to-[#ff1493] rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-2xl shadow-[#ff99cc]/50 group-hover:shadow-[#ff1493]/70"
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-2xl shadow-[#f7e7ce]/50 group-hover:shadow-[#f7d76e]/70"
                   >
                     <Play className="w-10 h-10 text-[#0a0a0a] ml-1" fill="#0a0a0a" />
                   </button>
@@ -81,7 +81,7 @@ export function VideoShowcaseSection() {
                     <p className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-2">
                       A Love Story Begins
                     </p>
-                    <p className="font-['Inter'] text-[#ff1493]">
+                    <p className="font-['Inter'] text-[#f7e7ce]">
                       Featured Ceremony Highlights
                     </p>
                   </div>
@@ -111,7 +111,7 @@ export function VideoShowcaseSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="relative aspect-video rounded-xl overflow-hidden border border-[#ff99cc]/20 hover:border-[#ff99cc]/50 transition-all cursor-pointer group"
+                className="relative aspect-video rounded-xl overflow-hidden border border-[#f7e7ce]/20 hover:border-[#f7e7ce]/50 transition-all cursor-pointer group"
               >
                 <ImageWithFallback
                   src={video.thumbnail}
@@ -120,7 +120,7 @@ export function VideoShowcaseSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/50 to-transparent" />
                 
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#ff99cc]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#f7e7ce]/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
                   <Play className="w-6 h-6 text-[#0a0a0a] ml-0.5" fill="#0a0a0a" />
                 </div>
 
@@ -128,7 +128,7 @@ export function VideoShowcaseSection() {
                   <p className="font-['Playfair_Display'] text-lg text-[#f7e7ce] mb-1">
                     {video.title}
                   </p>
-                  <p className="font-['Inter'] text-sm text-[#ff1493]">
+                  <p className="font-['Inter'] text-sm text-[#f7e7ce]">
                     {video.duration}
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export function VideoShowcaseSection() {
               href="tel:602-570-6728"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff1493] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#f7e7ce]/30 hover:shadow-xl hover:shadow-[#f7e7ce]/50"
             >
               <span className="font-['Inter'] font-semibold text-lg">Start Planning Your Ceremony</span>
             </motion.a>

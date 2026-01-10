@@ -28,7 +28,7 @@ export function StickyCtaButton() {
             href="tel:+19802483144"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="flex items-center gap-3 bg-gradient-to-r from-[#ff99cc] to-[#ff1493] text-[#0a0a0a] px-6 py-4 rounded-full shadow-2xl shadow-[#ff99cc]/50 hover:shadow-[#ff99cc]/70 transition-all"
+            className="flex items-center gap-3 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] text-[#0a0a0a] px-6 py-4 rounded-full shadow-2xl shadow-[#f7e7ce]/50 hover:shadow-[#f7d76e]/70 transition-all"
           >
             <Phone className="w-6 h-6" />
             <span className="font-['Inter'] font-semibold hidden sm:inline">Call Now</span>

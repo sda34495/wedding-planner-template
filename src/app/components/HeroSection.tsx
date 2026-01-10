@@ -39,7 +39,7 @@ export function HeroSection() {
           <h1 className="font-['Playfair_Display'] text-5xl md:text-7xl lg:text-8xl text-[#f7e7ce] mb-8 leading-tight">
             Make every celebration unforgettable.
             <br />
-            <span className="text-[#ff1493]">Events, parties & bespoke decor.</span>
+            <span className="text-[#f7e7ce] ">Events, parties & bespoke decor.</span>
           </h1>
 
           {/* Subheadline */}
@@ -48,17 +48,17 @@ export function HeroSection() {
           </p>
 
           {/* Trust Signals */}
-            <div className="flex flex-wrap justify-center gap-6 mb-12 text-[#ff1493]">
-              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
-                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+            <div className="flex flex-wrap justify-center gap-6 mb-12 text-[#f7e7ce] ">
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#f7e7ce]/20">
+                <div className="w-2 h-2 bg-[#f7e7ce] rounded-full" />
                 <span className="font-['Inter']">Professional Event Planner</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
-                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#f7e7ce]/20">
+                <div className="w-2 h-2 bg-[#f7e7ce] rounded-full" />
                 <span className="font-['Inter']">Same-Day & On-Demand Services</span>
               </div>
-              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#ff1493]/20">
-                <div className="w-2 h-2 bg-[#ff1493] rounded-full" />
+              <div className="flex items-center gap-2 px-4 py-2 bg-[#1a1a1a]/60 backdrop-blur-sm rounded-lg border border-[#f7e7ce]/20">
+                <div className="w-2 h-2 bg-[#f7e7ce] rounded-full" />
                 <span className="font-['Inter']">Serving Concord, NC & Beyond</span>
               </div>
             </div>
@@ -69,7 +69,7 @@ export function HeroSection() {
               href="tel:+19802483144"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#ff1493] to-[#7dd3cc] text-[#0a0a0a] px-10 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#ff1493]/50"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] text-[#0a0a0a] px-10 py-5 rounded-full transition-all shadow-lg shadow-[#ff1493]/30 hover:shadow-xl hover:shadow-[#f7e7ce]/50"
             >
               <Calendar className="w-6 h-6" />
               <span className="font-['Inter'] font-semibold text-lg">Book Same-Day Service</span>
@@ -79,7 +79,7 @@ export function HeroSection() {
               href="tel:+19802483144"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#ff1493] px-10 py-5 rounded-full border-2 border-[#ff1493] transition-all hover:bg-[#ff1493]/10"
+              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#f7e7ce]  px-10 py-5 rounded-full border-2 border-[#f7e7ce] transition-all hover:bg-[#f7e7ce]/10"
             >
               <Phone className="w-6 h-6" />
               <span className="font-['Inter'] font-semibold text-lg">Call Now</span>
@@ -97,9 +97,9 @@ export function HeroSection() {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ repeat: Infinity, duration: 2 }}
-              className="w-6 h-10 border-2 border-[#ff1493]/50 rounded-full flex items-start justify-center p-2"
+              className="w-6 h-10 border-2 border-[#f7d76e]/50 rounded-full flex items-start justify-center p-2"
             >
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7d76e] rounded-full" />
             </motion.div>
         </motion.div>
       </div>

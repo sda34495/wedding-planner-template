@@ -39,25 +39,25 @@ export default function App() {
       </main>
 
       {/* Footer */}
-  <footer className="relative py-12 px-6 border-t border-[#ff69b4]/10">
+  <footer className="relative py-12 px-6 border-t border-[#f7e7ce]/10">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="font-['Playfair_Display'] text-2xl text-[#ff69b4] mb-4">
-            DeluxeDecor12
+          <p className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-4">
+            Deluxe Decor
           </p>
           <p className="font-['Inter'] text-[#a8a8a8] mb-6">
             Event Planning & Decor Services • Serving Arizona with Love & Compassion
           </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-[#a8a8a8]">
-              <a href="tel:+19802483144" className="hover:text-[#ff69b4] transition-colors">
+              <a href="tel:+19802483144" className="hover:text-[#f7e7ce] transition-colors">
                 +1 980-248-3144
               </a>
               <span className="hidden sm:inline">•</span>
-              <a href="mailto:deluxe.decor.12.0@gmail.com" className="hover:text-[#ff69b4] transition-colors">
+              <a href="mailto:deluxe.decor.12.0@gmail.com" className="hover:text-[#f7e7ce] transition-colors">
                 deluxe.decor.12.0@gmail.com
               </a>
             </div>
           <p className="font-['Inter'] text-xs text-[#a8a8a8] mt-8">
-            © 2026 DeluxeDecor12. All rights reserved.
+            © 2026 Deluxe Decor. All rights reserved.
           </p>
         </div>
       </footer>
