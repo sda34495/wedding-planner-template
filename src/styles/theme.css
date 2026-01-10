@@ -9,13 +9,13 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   /* Primary color changed to cool pink gradient palette */
-  --primary: #ff69b4;
+  --primary: #d8d8d8;
   --primary-foreground: #0a0a0a;
   --secondary: oklch(0.95 0.0058 264.53);
   --secondary-foreground: #030213;
   --muted: #1a1a1a;
   --muted-foreground: #a8a8a8;
-  --accent: #ff1493;
+  --accent: #dbddd6;
   --accent-foreground: #0a0a0a;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
@@ -25,7 +25,7 @@
   --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #ff69b4;
+  --ring: #e3e7cf;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -42,7 +42,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Custom luxury colors */
-  --gold: #ff1493;
+  --gold: #f7e478;
   --champagne: #f7e7ce;
   --warm-ivory: #faf8f3;
   --soft-blush: #f4e4e0;

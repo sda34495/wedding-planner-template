@@ -18,13 +18,13 @@ export function BrandStatementSection() {
         >
           {/* Decorative Element */}
           <div className="flex items-center justify-center mb-12">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#ff1493]" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#f7d76e]" />
             <div className="mx-6 flex gap-2">
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
             </div>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#ff1493]" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#f7d76e]" />
           </div>
 
           {/* Main Statement */}
@@ -33,22 +33,22 @@ export function BrandStatementSection() {
             <br />
             A new chapter.
             <br />
-            <span className="text-[#ff1493]">Your love story deserves</span>
+            <span className="text-[#f7e7ce] ">Your love story deserves</span>
             <br />
-            <span className="text-[#ff1493]">a ceremony that feels</span>
+            <span className="text-[#f7e7ce] ">a ceremony that feels</span>
             <br />
             personal and unforgettable.
           </h2>
 
           {/* Decorative Element */}
           <div className="flex items-center justify-center mt-12">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#ff1493]" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#f7d76e]" />
             <div className="mx-6 flex gap-2">
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#ff1493] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
             </div>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#ff1493]" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#f7d76e]" />
           </div>
         </motion.div>
       </div>
