@@ -1,4 +1,4 @@
-    import { motion } from "motion/react";
+import { motion } from "motion/react";
 import { Star, Quote } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -6,34 +6,37 @@ const testimonials = [
   {
     name: "Sarah & Michael",
     image: "https://images.unsplash.com/photo-1665258608444-54f857b2ed8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwY291cGxlJTIwaGFwcHl8ZW58MXx8fHwxNzY3OTYzMDk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    date: "New Year's Eve 2025",
-    text: "Dafne made our New Year's Eve wedding absolutely magical. We couldn't wait another day to get married, and she made it happen with such grace and warmth. Starting our new year as husband and wife was the best decision we ever made."
+    date: "Wedding Reception 2025",
+    text: "Dafnetransformed our reception venue into an absolute dream! The gold and white decor was stunning, and every detail was perfect. Her coordination made our day completely stress-free."
   },
   {
     name: "Jennifer & David",
     image: "https://images.unsplash.com/photo-1604378282113-1fde3be480ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmlkZSUyMGdyb29tJTIwdm93c3xlbnwxfHx8fDE3Njc5ODEyODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    date: "Same-Day Ceremony",
-    text: "We needed to get married quickly, and Dafne was there for us. Professional, compassionate, and made our simple ceremony feel incredibly special. She truly cares about every couple she serves."
+    date: "Anniversary Gala",
+    text: "We hired Deluxe Decor for our 25th anniversary celebration, and it exceeded all expectations. The decoration design was breathtaking, and the event flowed seamlessly. Highly recommend!"
   },
   {
     name: "Amanda & Robert",
     image: "https://images.unsplash.com/photo-1767127428139-dbc4bbaf150f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwd2VkZGluZyUyMGNvdXBsZSUyMHN1bnNldHxlbnwxfHx8fDE3Njc5ODA5MTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    date: "Desert Ceremony",
-    text: "Our Arizona desert wedding was like a dream, and Dafne was the perfect officiant. She understood our vision and created a ceremony that was both elegant and deeply personal. We couldn't have asked for more."
+    date: "Luxury Wedding",
+    text: "From planning to execution, Dafnewas phenomenal. She understood our vision perfectly and brought it to life with elegant decorations and flawless coordination. Our guests are still raving about it!"
   },
   {
     name: "Lisa & Mark",
     image: "https://images.unsplash.com/photo-1612883809638-9314edb33efb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb21hbnRpYyUyMHdlZGRpbmclMjBvdXRkb29yfGVufDF8fHx8MTc2Nzk4MTI4NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    date: "Intimate Garden Wedding",
-    text: "From our first conversation to saying 'I do,' Dafne made everything seamless. Her warmth and professionalism gave us the confidence to enjoy every moment. She's not just an officiant—she's a blessing."
+    date: "Garden Event",
+    text: "Working with Deluxe Decor was the best decision we made. Cicely's attention to detail and creative vision made our outdoor event absolutely stunning. Everything was perfectly coordinated!"
   }
 ];
 
 export function TestimonialsSection() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section className="relative py-24 px-6 overflow-hidden bg-black">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#0a0a0a]" />
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, #FFD700 1px, transparent 0)',
+        backgroundSize: '60px 60px'
+      }} />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.div
@@ -44,18 +47,18 @@ export function TestimonialsSection() {
         >
           {/* Headline */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#f7e7ce]/20 to-[#f7d76e]/20 rounded-full border border-[#f7e7ce]/30 mb-6">
-              <Star className="w-4 h-4 text-[#f7e7ce]" />
-              <span className="font-['Inter'] text-[#f7e7ce] text-sm uppercase tracking-wider">Real Stories</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#FFD700]/20 to-[#FFED4E]/20 rounded-full border border-[#FFD700]/50 mb-6">
+              <Star className="w-4 h-4 text-[#FFD700]" />
+              <span className="font-['Inter'] text-[#FFD700] text-sm uppercase tracking-wider font-semibold">Client Stories</span>
             </div>
 
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
-              Voices of
+            <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-white mb-6 leading-tight">
+              What Our Clients
               <br />
-              <span className="text-[#f7e7ce]">Happy Couples</span>
+              <span className="text-[#FFD700]">Are Saying</span>
             </h2>
-            <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-3xl mx-auto leading-relaxed">
-              Don't just take our word for it—hear from couples who trusted us with their special moments.
+            <p className="font-['Inter'] text-xl text-[#9b9b9b] max-w-3xl mx-auto leading-relaxed">
+              Real experiences from clients who trusted us to make their celebrations unforgettable.
             </p>
           </div>
 
@@ -68,26 +71,26 @@ export function TestimonialsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#f7e7ce]/20 rounded-2xl p-8 hover:border-[#f7e7ce]/40 transition-all"
+                className="bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8 hover:border-[#FFD700]/60 transition-all backdrop-blur-sm"
               >
                 {/* Quote Icon */}
-                <Quote className="w-10 h-10 text-[#f7e7ce]/30 mb-4" />
+                <Quote className="w-10 h-10 text-[#FFD700]/40 mb-4" />
 
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#f7e7ce] text-[#f7e7ce]" />
+                    <Star key={i} className="w-5 h-5 fill-[#FFD700] text-[#FFD700]" />
                   ))}
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="font-['Inter'] text-[#f5f5f5] text-lg leading-relaxed mb-6 italic">
+                <p className="font-['Inter'] text-white text-lg leading-relaxed mb-6 italic">
                   "{testimonial.text}"
                 </p>
 
                 {/* Client Info */}
-                <div className="flex items-center gap-4 pt-6 border-t border-[#f7e7ce]/10">
-                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#f7e7ce]/30">
+                <div className="flex items-center gap-4 pt-6 border-t border-[#FFD700]/20">
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#FFD700]">
                     <ImageWithFallback
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -95,10 +98,10 @@ export function TestimonialsSection() {
                     />
                   </div>
                   <div>
-                    <p className="font-['Playfair_Display'] text-lg text-[#f7e7ce]">
+                    <p className="font-['Playfair_Display'] text-lg text-white">
                       {testimonial.name}
                     </p>
-                    <p className="font-['Inter'] text-sm text-[#f7e7ce]">
+                    <p className="font-['Inter'] text-sm text-[#FFD700]">
                       {testimonial.date}
                     </p>
                   </div>
@@ -114,14 +117,14 @@ export function TestimonialsSection() {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-                <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#f7e7ce]/20 rounded-full">
+            <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/5 border border-[#FFD700]/30 rounded-full backdrop-blur-sm">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-[#f7e7ce] text-[#f7e7ce]" />
+                  <Star key={i} className="w-6 h-6 fill-[#FFD700] text-[#FFD700]" />
                 ))}
               </div>
-              <span className="font-['Inter'] text-[#f7e7ce] text-lg">
-                Rated 5.0 Stars by Our Couples
+              <span className="font-['Inter'] text-white text-lg">
+                Rated 5.0 Stars by Our Clients
               </span>
             </div>
           </motion.div>

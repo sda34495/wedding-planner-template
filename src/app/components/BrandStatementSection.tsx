@@ -7,7 +7,7 @@ export function BrandStatementSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#0a0a0a]" />
       
       {/* Radial Glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,105,180,0.06)_0%,transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.06)_0%,transparent_70%)]" />
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         <motion.div
@@ -18,13 +18,13 @@ export function BrandStatementSection() {
         >
           {/* Decorative Element */}
           <div className="flex items-center justify-center mb-12">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#f7d76e]" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#d4af37]" />
             <div className="mx-6 flex gap-2">
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
             </div>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#f7d76e]" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#d4af37]" />
           </div>
 
           {/* Main Statement */}
@@ -33,22 +33,22 @@ export function BrandStatementSection() {
             <br />
             A new chapter.
             <br />
-            <span className="text-[#f7e7ce] ">Your love story deserves</span>
+            <span className="text-[#d4af37]">Your love story deserves</span>
             <br />
-            <span className="text-[#f7e7ce] ">a ceremony that feels</span>
+            <span className="text-[#d4af37]">a ceremony that feels</span>
             <br />
             personal and unforgettable.
           </h2>
 
           {/* Decorative Element */}
           <div className="flex items-center justify-center mt-12">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#f7d76e]" />
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#d4af37]" />
             <div className="mx-6 flex gap-2">
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
-              <div className="w-1.5 h-1.5 bg-[#f7e7ce] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
+              <div className="w-1.5 h-1.5 bg-[#d4af37] rounded-full" />
             </div>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#f7d76e]" />
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#d4af37]" />
           </div>
         </motion.div>
       </div>
