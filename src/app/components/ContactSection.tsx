@@ -1,14 +1,23 @@
 import { motion } from "motion/react";
-import { Phone, Mail, MapPin, Instagram } from "lucide-react";
+import { useState } from "react";
+import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
 
 export function ContactSection() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 3000);
+  };
+
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#0a0a0a]" />
-      
-  {/* Decorative Glow */}
-  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#f7e7ce]/5 rounded-full blur-3xl" />
+    <section id="contact" className="relative py-24 px-6 overflow-hidden bg-white">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, #FFD700 1px, transparent 0)',
+        backgroundSize: '60px 60px'
+      }} />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
@@ -19,115 +28,191 @@ export function ContactSection() {
         >
           {/* Headline */}
           <div className="text-center mb-16">
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-[#f7e7ce] mb-6 leading-tight">
-              Let's Make It
+            <h2 className="font-['Playfair_Display'] text-5xl md:text-7xl text-black mb-6 leading-tight">
+              Let's Create
               <br />
-              <span className="text-[#f7e7ce] ">Happen</span>
+              <span className="text-[#FFD700]">Something Amazing</span>
             </h2>
-            <p className="font-['Inter'] text-xl text-[#a8a8a8] max-w-2xl mx-auto leading-relaxed">
-              Your perfect event is just one call or email away. We design and deliver memorable birthday parties, corporate events, and private celebrations.
+            <p className="font-['Inter'] text-xl text-[#6b6b6b] max-w-3xl mx-auto leading-relaxed">
+              Ready to start planning your dream event? Contact us today for a consultation and let's bring your vision to life.
             </p>
           </div>
 
-          {/* Contact Cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
-            {/* Phone */}
-            <motion.a
-              href="tel:+19802483144"
-              whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#f7e7ce]/30 rounded-2xl p-10 text-center hover:border-[#f7e7ce] transition-all group"
-            >
-              <div className="bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg group-hover:shadow-[#f7e7ce]/50 transition-all">
-                <Phone className="w-10 h-10 text-[#0a0a0a]" />
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-['Playfair_Display'] text-3xl text-black mb-6">
+                  Get in Touch
+                </h3>
+                <p className="font-['Inter'] text-[#6b6b6b] leading-relaxed mb-8">
+                  Whether you're planning a wedding, anniversary, corporate event, or any special celebration, we're here to help make it extraordinary.
+                </p>
               </div>
-                <p className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-3">
-                  Call Deluxe Decor
-                </p>
-                <p className="font-['Inter'] text-3xl text-[#f7e7ce]  mb-4 tracking-wide">
-                  +1 980-248-3144
-                </p>
-              <p className="font-['Inter'] text-[#a8a8a8]">
-                Available for immediate inquiries and same-day bookings
-              </p>
-            </motion.a>
 
-            {/* Email */}
-            <motion.a
-              href="mailto:deluxe.decor.12.0@gmail.com"
-              whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-[#1a1a1a] to-[#141414] border border-[#f7e7ce]/30 rounded-2xl p-10 text-center hover:border-[#f7e7ce] transition-all group"
-            >
-              <div className="bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg group-hover:shadow-[#f7e7ce]/50 transition-all">
-                <Mail className="w-10 h-10 text-[#0a0a0a]" />
-              </div>
-              <h3 className="font-['Playfair_Display'] text-2xl text-[#f7e7ce] mb-3">
-                Email Us
-              </h3>
-              <p className="font-['Inter'] text-lg text-[#f7e7ce]  mb-4 break-all">
-                deluxe.decor.12.0@gmail.com
-              </p>
-              <p className="font-['Inter'] text-[#a8a8a8]">
-                For detailed inquiries and confidential consultations
-              </p>
-            </motion.a>
-          </div>
+              {/* Contact Details */}
+              <div className="space-y-6">
+                <motion.a
+                  href="tel:+1 980-248-3144"
+                  whileHover={{ x: 5 }}
+                  className="flex items-center gap-4 p-6 bg-black rounded-2xl border border-[#FFD700]/30 hover:border-[#FFD700] transition-all group"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFED4E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Phone className="w-6 h-6 text-black" />
+                  </div>
+                  <div>
+                    <p className="font-['Inter'] text-sm text-[#9b9b9b] mb-1">Call Us</p>
+                    <p className="font-['Inter'] text-white text-lg">+1 980-248-3144</p>
+                  </div>
+                </motion.a>
 
-          {/* Business Info */}
-          <div className="bg-gradient-to-r from-[#1a1a1a]/50 via-[#141414]/80 to-[#1a1a1a]/50 border border-[#f7e7ce]/10 rounded-2xl p-8 max-w-4xl mx-auto mb-12">
-            <div className="text-center">
-              <h3 className="font-['Playfair_Display'] text-3xl text-[#f7e7ce] mb-6">
-                Deluxe Decor
-              </h3>
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <MapPin className="w-5 h-5 text-[#f7e7ce] " />
-                <p className="font-['Inter'] text-[#a8a8a8]">
-                  Concord, NC, United States, North Carolina
-                </p>
+                <motion.a
+                  href="mailto:deluxe.decor.12.0@gmail.com"
+                  whileHover={{ x: 5 }}
+                  className="flex items-center gap-4 p-6 bg-black rounded-2xl border border-[#FFD700]/30 hover:border-[#FFD700] transition-all group"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFED4E] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Mail className="w-6 h-6 text-black" />
+                  </div>
+                  <div>
+                    <p className="font-['Inter'] text-sm text-[#9b9b9b] mb-1">Email Us</p>
+                    <p className="font-['Inter'] text-white text-lg">deluxe.decor.12.0@gmail.com</p>
+                  </div>
+                </motion.a>
+
+                <div className="flex items-center gap-4 p-6 bg-black rounded-2xl border border-[#FFD700]/30">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#FFD700] to-[#FFED4E] rounded-full flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-black" />
+                  </div>
+                  <div>
+                    <p className="font-['Inter'] text-sm text-[#9b9b9b] mb-1">Location</p>
+                    <p className="font-['Inter'] text-white text-lg">Serving All of Arizona</p>
+                  </div>
+                </div>
               </div>
-              <p className="font-['Inter'] text-[#f7e7ce] italic">
-                Event Planning & Decor
-              </p>
-              {/* Social links */}
-              <div className="mt-4 flex items-center justify-center gap-4">
-                <a href="https://www.tiktok.com/@dafnevaladez3" target="_blank" rel="noreferrer" className="text-[#f7e7ce]  hover:opacity-80">
-                  {/* TikTok SVG (simple mark) */}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                    <path d="M12.5 2h2.5v4.2c1.2.1 2.2.6 3 1.4.6.6 1 1.4 1.2 2.2-.5-.2-1-.3-1.5-.3-.8 0-1.6.2-2.3.6V9.2c-.6-.1-1.2-.2-1.8-.2V16a4 4 0 1 1-4-4v-6H8v-2.2c.6-.1 1.2-.2 1.8-.2h2.7V2z" />
-                  </svg>
-                </a>
-                <a href="https://www.tiktok.com/@Deluxe Decor" target="_blank" rel="noreferrer" className="text-[#f7e7ce]  hover:opacity-80">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                    <path d="M12.5 2h2.5v4.2c1.2.1 2.2.6 3 1.4.6.6 1 1.4 1.2 2.2-.5-.2-1-.3-1.5-.3-.8 0-1.6.2-2.3.6V9.2c-.6-.1-1.2-.2-1.8-.2V16a4 4 0 1 1-4-4v-6H8v-2.2c.6-.1 1.2-.2 1.8-.2h2.7V2z" />
-                  </svg>
-                </a>
-                <a href="https://www.instagram.com/Deluxe Decor" target="_blank" rel="noreferrer" className="text-[#f7e7ce]  hover:opacity-80">
-                  <Instagram className="w-6 h-6" />
-                </a>
+
+              {/* Business Hours */}
+              <div className="p-6 bg-gradient-to-br from-black to-[#1a1a1a] rounded-2xl border border-[#FFD700]/30">
+                <h4 className="font-['Playfair_Display'] text-xl text-[#FFD700] mb-4">
+                  Business Hours
+                </h4>
+                <div className="space-y-2 font-['Inter'] text-[#f5f5f5]">
+                  <div className="flex justify-between">
+                    <span>Monday - Friday</span>
+                    <span className="text-[#9b9b9b]">9:00 AM - 7:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Saturday</span>
+                    <span className="text-[#9b9b9b]">10:00 AM - 6:00 PM</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Sunday</span>
+                    <span className="text-[#9b9b9b]">By Appointment</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Final CTAs */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <motion.a
-              href="tel:+19802483144"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#f7e7ce] to-[#f7d76e] text-[#0a0a0a] px-12 py-5 rounded-full transition-all shadow-lg shadow-[#f7e7ce]/30 hover:shadow-xl hover:shadow-[#f7d76e]/50"
-            >
-              <Phone className="w-6 h-6" />
-              <span className="font-['Inter'] font-semibold text-lg">Call for Same-Day Service</span>
-            </motion.a>
-            
-            <motion.a
-              href="mailto:deluxe.decor.12.0@gmail.com"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 bg-[#1a1a1a]/80 backdrop-blur-sm text-[#f7e7ce]  px-12 py-5 rounded-full border-2 border-[#f7e7ce] transition-all hover:bg-[#f7e7ce]/10"
-            >
-              <Mail className="w-6 h-6" />
-              <span className="font-['Inter'] font-semibold text-lg">Email Deluxe Decor</span>
-            </motion.a>
+            {/* Contact Form */}
+            <div className="bg-black rounded-2xl p-8 border border-[#FFD700]/30">
+              <h3 className="font-['Playfair_Display'] text-2xl text-white mb-6">
+                Request a Consultation
+              </h3>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block font-['Inter'] text-sm text-[#9b9b9b] mb-2">
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    className="w-full px-4 py-3 bg-white/5 border border-[#FFD700]/30 rounded-lg text-white focus:border-[#FFD700] focus:outline-none transition-colors"
+                    placeholder="Enter your full name"
+                  />
+                </div>
+
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="email" className="block font-['Inter'] text-sm text-[#9b9b9b] mb-2">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      className="w-full px-4 py-3 bg-white/5 border border-[#FFD700]/30 rounded-lg text-white focus:border-[#FFD700] focus:outline-none transition-colors"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="block font-['Inter'] text-sm text-[#9b9b9b] mb-2">
+                      Phone *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      required
+                      className="w-full px-4 py-3 bg-white/5 border border-[#FFD700]/30 rounded-lg text-white focus:border-[#FFD700] focus:outline-none transition-colors"
+                      placeholder="(123) 456-7890"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="event-type" className="block font-['Inter'] text-sm text-[#9b9b9b] mb-2">
+                    Event Type *
+                  </label>
+                  <select
+                    id="event-type"
+                    required
+                    className="w-full px-4 py-3 bg-white/5 border border-[#FFD700]/30 rounded-lg text-white focus:border-[#FFD700] focus:outline-none transition-colors"
+                  >
+                    <option value="">Select an event type</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="other">Other Celebration</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block font-['Inter'] text-sm text-[#9b9b9b] mb-2">
+                    Tell us about your event *
+                  </label>
+                  <textarea
+                    id="message"
+                    required
+                    rows={4}
+                    className="w-full px-4 py-3 bg-white/5 border border-[#FFD700]/30 rounded-lg text-white focus:border-[#FFD700] focus:outline-none transition-colors resize-none"
+                    placeholder="Share your vision, date, guest count, and any special requirements..."
+                  />
+                </div>
+
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  disabled={isSubmitted}
+                  className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#FFD700] to-[#FFED4E] text-black px-8 py-4 rounded-full font-['Inter'] font-semibold text-lg hover:shadow-lg hover:shadow-[#FFD700]/50 transition-all disabled:opacity-50"
+                >
+                  {isSubmitted ? (
+                    <>
+                      <CheckCircle className="w-6 h-6" />
+                      Message Sent!
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-6 h-6" />
+                      Send Message
+                    </>
+                  )}
+                </motion.button>
+              </form>
+            </div>
           </div>
         </motion.div>
       </div>
